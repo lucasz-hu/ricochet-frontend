@@ -1,7 +1,7 @@
 import React from 'react';
 import cx from 'classnames';
 import { FontIcon, FontIconName } from 'components/common/FontIcon';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { selectUserStreams } from 'store/main/selectors';
 import { Routes } from 'constants/routes';
 import { useShallowSelector } from 'hooks/useShallowSelector';
@@ -13,7 +13,6 @@ const TUTORIAL_LINK = 'https://docs.ricochet.exchange/tutorial/using-the-dapp';
 
 export const InvestNav = () => {
   const userStreams = useShallowSelector(selectUserStreams);
-  const location = useLocation();
   return (
     <div className={styles.nav_container}>
       {userStreams.length > 0 && (
@@ -79,8 +78,6 @@ export const InvestNav = () => {
         <FontIcon name={FontIconName.Bank} size={16} />
   &nbsp;Bank
       </NavLink>
-
-      {(location.pathname === Routes.Banks || location.pathname === Routes.Vaults) && (
       <NavLink
         className={cx(styles.nav_link)}
         activeClassName={styles.nav_link_active}
@@ -88,9 +85,7 @@ export const InvestNav = () => {
       >
         <FontIcon name={FontIconName.Lock} size={16} />
         &nbsp;Vault
-      </NavLink>
-      )}
-
+      </NavLink>       
       <NavLink
         className={styles.link}
         to={{ pathname: TUTORIAL_LINK }}
@@ -99,7 +94,6 @@ export const InvestNav = () => {
         Tutorial&nbsp;
         <FontIcon name={FontIconName.External} size={16} />
       </NavLink>
-       
     </div>
   );
 };

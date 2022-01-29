@@ -20,7 +20,7 @@ export const ApproveToken: FC<Props> = ({
       <Button
         className={styles.button}
         onClick={onApproveClick}
-        label="give allowance"
+        label="Give Allowance"
       />
     </LoadingWrapper>
   </div>

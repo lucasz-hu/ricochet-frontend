@@ -127,7 +127,7 @@ export const VaultTransaction: FC<Props> = ({
             <div className={styles.VaultTransaction__buttons}>
               {activeTransaction === 'repay' ? (
                 <Button
-                  label="repay max"
+                  label="Repay Max"
                   presentation="link"
                   onClick={onMaxRepay}
                   className={styles.linkButton}
@@ -140,7 +140,7 @@ export const VaultTransaction: FC<Props> = ({
                 onClick={onMaxAmount}
               />
               <Button
-                label="cancel"
+                label="Cancel"
                 presentation="link"
                 onClick={onCancel}
                 className={styles.linkButton}
@@ -149,7 +149,7 @@ export const VaultTransaction: FC<Props> = ({
                 label={activeTransaction}
                 className={styles.actionButton}
                 onClick={onMakeAction}
-                disabled={!value}
+                disabled={Number(value) > 0}
               />
             </div>
           </div>

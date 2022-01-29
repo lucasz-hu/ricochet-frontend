@@ -6,12 +6,12 @@
   border-radius: 8px;
   box-shadow: 0 13px 26px 0 rgba(0, 0, 0, 0.1);
   font-weight: 700;
-  color: var(--color-blue);
+  color: white;
   line-height: 1.5715;
   position: relative;
   display: inline-block;
   border: none;
-  background-color: white;
+  background-color: var(--color-blue);
   white-space: nowrap;
   transition-property: all;
   transition-duration: 0.05s;
