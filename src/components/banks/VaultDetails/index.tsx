@@ -6,6 +6,7 @@ import { BankStatusBar } from 'components/banks/BankStatusBar';
 import { BankType } from 'store/banks/types';
 import { VaultTransactionContainer } from 'containers/main/VaultTransactionContainer';
 import { FontIcon, FontIconName } from 'components/common/FontIcon';
+import { EtherscanLink } from 'components/banks/EtherScanLink';
 import styles from './styles.module.scss';
 
 type Props = {
@@ -59,6 +60,7 @@ export const VaultDetails: FC<Props> = ({
             <div className={styles.BankDataTxt}>
               <p className={styles.BankName}>{bank.name}</p>
               <p>{truncateAddr(bank.bankAddress)}</p>
+              <EtherscanLink className={styles.etherLink} path="address" hash={bank.bankAddress} />
             </div>
             <FontIcon
               className={styles.bankIcon}

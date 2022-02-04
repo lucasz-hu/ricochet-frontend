@@ -57,7 +57,7 @@ export const VaultTransaction: FC<Props> = ({
     activeTransaction,
     value,
   );
-  
+
   return (
     <div className={styles.VaultTransaction}>
       <LoadingWrapper
@@ -149,7 +149,7 @@ export const VaultTransaction: FC<Props> = ({
                 label={activeTransaction}
                 className={styles.actionButton}
                 onClick={onMakeAction}
-                disabled={Number(value) > 0}
+                disabled={!value || !(parseFloat(value) > 0)}
               />
             </div>
           </div>
