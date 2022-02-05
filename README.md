@@ -1,6 +1,26 @@
-### Ricochet frontend
+<p align="center">
+  <img src="https://i.imgur.com/33cYuLk.png" alt="Ricochet Logo" width="50%" height="50%"/>
+</p>
+<p align="center">
+  <a href="https://ricochet.exchange/">Website</a> •
+  <a href="https://docs.ricochet.exchange/">Docs</a> •
+  <a href="https://forms.gle/WPXXmAzRsjUCmhR19">Bounty Submission</a> •
+  <a href="https://app.ricochet.exchange/RicochetExchangeWhitepaper.pdf">White Paper</a> •
+  <a href="https://app.ricochet.exchange/">App</a>
+ </p>
+</p>    
 
-This is a ricochet app frontend, made in react, using redux and redux-saga
+[![Discord](https://badgen.net/badge/icon/discord?icon=discord&label)](https://discord.com/invite/egu4FZbPBM)
+![Contributors](https://img.shields.io/github/contributors/ricochet-exchange/ricochet-frontend)
+![Commits/month](https://img.shields.io/github/commit-activity/m/ricochet-exchange/ricochet-frontend)
+![Repo Size](https://img.shields.io/github/repo-size/ricochet-exchange/ricochet-frontend)
+![Stars](https://img.shields.io/github/stars/ricochet-exchange/ricochet-frontend?style=social)
+![Forks](https://img.shields.io/github/forks/Ricochet-Exchange/ricochet-frontend?style=social)
+
+
+### Ricochet
+
+This is the Ricochet frontend, made in react, using redux and redux-saga
 
 #### How to start
 
